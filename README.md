@@ -92,5 +92,3 @@ SSH into the control node and follow the steps below:
 - Copy the [Install-elk.yml](Ansible/install-elk.yml) playbook to /etc/ansible/ in the container.
 - Update the /ansible/hosts file to include Web VM and ELK VM IP addresses. In order to ensure the correct machines will be configured with Filebeat, Metricbeat, or ELK, the Web VM IPs must be placed under the `[webservers]` line, while the ELK VM IP should be placed under the `[elk]` line.
 - Run the playbook, and navigate to the Kibana web page [http://13.64.212.35:5601/app/kibana] to check that the installation worked as expected.
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
